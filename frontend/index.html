@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Code Conversion and Debugging Tool</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" type="text/javascript"
+        charset="utf-8"></script>
+
+
+</head>
+
+<body>
+    <h1>Code Conversion and Debugging Tool</h1>
+    <button id="debugButton">Debug</button>
+    <button id="qualityCheckButton">Quality Check</button>
+    <button id="convertButton">Convert</button>
+    <!-- Replace the editor with a textarea for code input -->
+    <!-- <label for="code">Enter your code:</label>
+    <textarea id="code" rows="10" cols="50"></textarea> -->
+    <label for="editor">Enter your code:</label>
+    <div id="editor" style="height: 400px;"></div>
+
+    <label for="language">Select target language:</label>
+    <select id="language">
+        <option value="python">Python</option>
+        <option value="javascript">JavaScript</option>
+        <option value="c">C</option>
+        <option value="typescript">TypeScript</option>
+        <option value="java">Java</option>
+    </select>
+
+
+
+
+
+    <h2>Converted Code:</h2>
+    <pre id="convertedCode"></pre>
+
+    <h2>Debugging Results:</h2>
+    <pre id="debugResults"></pre>
+
+    <h2>Quality Check Suggestions:</h2>
+    <ul id="qualityCheckSuggestions"></ul>
+   
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
